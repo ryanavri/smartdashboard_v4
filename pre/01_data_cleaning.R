@@ -128,6 +128,14 @@ clean_satwa_DLHK <- function(file_path, landscape, sel_cols, site = NA) {
 
 # Memperbarui dataset----
 
+## Dataset usaha patroli----
+NRP1 <- clean_aktivitas_manusia(
+  file_path = "source/Kalbar/2026_q1/Observasi_Query_2020_2024.shp",
+  landscape = "Kalbar",
+)
+
+#CRP <- bind_rows(CRP, NRP1, NRP2)  # Combine old and new data
+
 ## Dataset aktivitas manusia----
 NAM1 <- clean_aktivitas_manusia(
   file_path = "source/Kalbar/2026_q1/Observasi_Query_2020_2024.csv",
